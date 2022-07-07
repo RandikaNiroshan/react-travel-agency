@@ -1,5 +1,22 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap");
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-volkhov: "Volkhov", serif;
+  --yellow: #f1a501;
+  --dark-blue: #181E4B;
+  --orange: #df6951;
+  --grey: #5e6282;
+  --light-yellow: #FFF1DA;
+  --large-text: 84px;
+  --title-text: 50px;
+  --subtitle-text: 20px;
+  --text-size: 18px;
 }
