@@ -15,8 +15,17 @@
   --orange: #df6951;
   --grey: #5e6282;
   --light-yellow: #FFF1DA;
+  --black: #212832;
   --large-text: 84px;
   --title-text: 50px;
   --subtitle-text: 20px;
   --text-size: 18px;
+  --site-padding: 9rem;
+  --default-padding: 5rem;
+  --half-padding: 2.5rem;
+  --default-gap: 2rem;
+}
+
+.body{
+  background-color: white;
 }
