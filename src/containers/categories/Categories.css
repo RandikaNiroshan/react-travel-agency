@@ -1,0 +1,132 @@
+.category {
+  width: 100%;
+  height: auto;
+  padding: var(--default-padding) var(--site-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+.category__grid {
+  margin-top: var(--half-padding);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  gap: 50px;
+}
+
+.category__grid-card {
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.category__grid-card:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.category__grid-card:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -35px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--orange);
+  border-radius: 28px 12px 12px 0;
+  z-index: -1;
+}
+
+.category__grid-card :nth-child(1) {
+  position: relative;
+  height: 140px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__grid-card h4 {
+  font-family: var(--font-open-sans);
+  font-size: var(--subtitle-size);
+  color: var(--dark-blue);
+  font-weight: 600;
+  text-align: center;
+}
+
+.category__grid-card p {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  color: var(--grey);
+  font-weight: 500;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.satellite-style {
+  max-height: 140px;
+  max-width: 60px;
+  z-index: 3;
+}
+
+.plane-style {
+  max-height: 140px;
+  max-width: 180px;
+  z-index: 3;
+}
+
+.mic-style {
+  max-height: 140px;
+  max-width: 40px;
+  object-fit: contain;
+  z-index: 3;
+}
+
+.gear-style {
+  max-height: 140px;
+  max-width: 45px;
+  z-index: 3;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 36px;
+  right: 28px;
+}
+
+.top-right {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.top-left {
+  position: absolute;
+  top: 38px;
+  left: 44px;
+}
+
+.curve-bottom-right {
+  height: 44px;
+  width: 44px;
+  background-color: var(--light-yellow);
+  border-radius: 5px 5px 15px 5px;
+}
+
+.curve-bottom-left {
+  height: 44px;
+  width: 44px;
+  background-color: var(--light-yellow);
+  border-radius: 5px 5px 5px 15px;
+}
+
+.curve-top-right {
+  height: 44px;
+  width: 44px;
+  background-color: var(--light-yellow);
+  border-radius: 5px 15px 5px 5px;
+}
