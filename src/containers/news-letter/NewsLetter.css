@@ -1,0 +1,138 @@
+.news-letter {
+  width: 100%;
+  height: auto;
+  padding: 7rem var(--site-padding);
+  position: relative;
+}
+
+.news-letter__area {
+  background-color: #dfd7f9;
+  width: 100%;
+  height: auto;
+  padding: var(--default-padding);
+  padding-bottom: 0;
+  border-radius: 60px 12px 12px 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-letter__area > h2 {
+  font-family: var(--font-poppins);
+  font-size: 33px;
+  color: var(--grey);
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
+}
+
+.news-letter__area > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--default-padding) var(--site-padding);
+  gap: 25px;
+  width: 100%;
+  z-index: 2;
+}
+
+.news-letter__area-input {
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.news-letter__area-input > div {
+  width: 26px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-letter__area-input > div > :first-child {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+  opacity: 0.8;
+}
+
+.news-letter__area-input > :nth-child(2) {
+  width: 100%;
+  height: auto;
+  padding: 22px 22px 22px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--font-open-sans);
+  color: var(--black);
+  font-weight: 500;
+  outline: none;
+}
+
+.news-letter__area-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  border-radius: 10px;
+}
+
+.news-letter__area-btn > p {
+  color: white;
+  font-family: var(--font-open-sans);
+  font-size: 17px;
+  font-weight: 500;
+  padding: 22px 45px;
+}
+
+.news-letter__area-decoration1 {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.news-letter__area-decoration2 {
+  position: absolute;
+  bottom: -5px;
+  left: 25px;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.news-letter__area-send {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(94, 59, 225, 1) 0%,
+    rgba(116, 125, 239, 1) 100%
+  );
+  position: relative;
+  position: absolute;
+  top: 6rem;
+  right: 8rem;
+  z-index: 4;
+}
+
+.news-letter__area-send > :first-child {
+  width: 60px;
+  height: 60px;
+  transform: translate(-3px, 2px) rotate(12deg);
+  color: white;
+  padding: 10px;
+}

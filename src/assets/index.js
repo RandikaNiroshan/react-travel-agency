@@ -4,6 +4,8 @@ export {default as PlayStoreLogo} from "./svg/google-play.svg";
 export {default as DecoBackground} from "./svg/decor.svg";
 export {default as DecoSpring} from "./svg/spring-decor.svg";
 export {default as DecoRedSpray} from "./svg/red-decor.svg";
+export {default as DecoNewsLetterRight} from "./svg/news-letter-deco1.svg";
+export {default as DecoNewsLetterLeft} from "./svg/news-letter-deco2.svg";
 export {default as IconGear} from "./svg/gear.svg";
 export {default as IconPlane} from "./svg/plane.svg";
 export {default as IconSatellite} from "./svg/satellite-dish.svg";
