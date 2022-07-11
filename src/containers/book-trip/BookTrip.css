@@ -1,0 +1,194 @@
+.book {
+  width: 100%;
+  height: auto;
+  padding: var(--half-padding) var(--site-padding);
+  display: flex;
+  margin-top: 3.5rem;
+}
+
+.book__left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  padding-right: 2rem;
+}
+
+.book__left-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--default-gap);
+  padding-right: 5rem;
+}
+
+.icon {
+  color: white;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+.book__right {
+  display: flex;
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 75px;
+  position: relative;
+}
+
+.book__right-card {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.book__right-card img {
+  border-radius: 20px;
+}
+
+.book__right-card h5 {
+  color: var(--black);
+  font-family: var(--font-poppins);
+  font-size: var(--text-size);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.book__right-card p {
+  color: var(--grey);
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.book__right-card > :nth-child(4) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.book__right-card > :nth-child(4) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.book__right-card-icons {
+  color: var(--grey);
+  width: 14px;
+  height: 14px;
+}
+
+.book__right-card > :nth-child(5) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book__right-card > :nth-child(5) > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.book__right-card > :nth-child(5) > div > :first-child {
+  color: var(--grey);
+  width: 16x;
+  height: 16px;
+}
+
+.book__right-card > :nth-child(5) > :nth-child(2) {
+  color: #4152ca;
+  width: 20px;
+  height: 20px;
+}
+
+.book__right-status-card {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  border-radius: 17px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+  position: absolute;
+  right: 54px;
+  bottom: 90px;
+}
+
+.book__right-status-card img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.book__right-status-card > :nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 10px;
+  gap: 4px;
+}
+
+.book__right-status-card > :nth-child(2) > p {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.book__right-status-card > :nth-child(2) > :nth-child(1) {
+  color: var(--grey);
+}
+
+.book__right-status-card > :nth-child(2) > :nth-child(2) {
+  color: var(--black);
+  font-family: var(--font-poppins);
+  font-size: var(--text-size);
+  font-weight: 500;
+}
+
+.book__right-status-card > :nth-child(2) > :nth-child(3) {
+  color: #8a79df;
+}
+
+.book__right-status-card > :nth-child(2) > :nth-child(3) > span {
+  color: var(--black);
+}
+
+.book__right-status-card-progress-bar {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 5px;
+  border-radius: 4px;
+}
+
+.book__right-status-card-progress-bar > div {
+  background-color: #8a79df;
+  width: 45%;
+  height: 100%;
+  border-radius: 4px;
+}

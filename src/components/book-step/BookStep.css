@@ -1,0 +1,50 @@
+.book-step {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.book-step__icon {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-step__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book-step__right p {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.book-step__right > :nth-child(1) {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.book-step__right > :nth-child(2) {
+  font-weight: 400;
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.blue {
+  background-color: #006380;
+}
