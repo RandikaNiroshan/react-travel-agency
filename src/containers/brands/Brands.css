@@ -1,0 +1,37 @@
+.brands {
+  width: 100%;
+  height: auto;
+  padding: var(--half-padding) var(--site-padding);
+  display: flex;
+  margin-top: 4rem;
+}
+
+.brands__list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brands__list div {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+}
+
+.brands__list div > img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.brands__list div:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
+  filter: grayscale(0%);
+}
