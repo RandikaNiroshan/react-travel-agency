@@ -1,6 +1,4 @@
 export {default as Logo} from "./svg/logo.svg";
-export {default as AppleLogo} from "./svg/apple.svg";
-export {default as PlayStoreLogo} from "./svg/google-play.svg";
 export {default as DecoBackground} from "./svg/decor.svg";
 export {default as DecoSpring} from "./svg/spring-decor.svg";
 export {default as DecoRedSpray} from "./svg/red-decor.svg";
@@ -22,3 +20,5 @@ export {default as ImgEurope} from "./img/europe.jpg";
 export {default as ImgGreece} from "./img/greece.jpg";
 export {default as ImgRome2} from "./img/rome2.png";
 export {default as ImgUser} from "./img/user.png";
+export {default as AppStoreBtn} from "./img/app-store.png";
+export {default as GooglePlayBtn} from "./img/google-play.png";
