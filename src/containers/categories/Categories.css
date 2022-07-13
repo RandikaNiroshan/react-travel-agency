@@ -1,15 +1,18 @@
 .category {
   width: 100%;
   height: auto;
-  padding: var(--default-padding) var(--site-padding);
   overflow: hidden;
+  margin-top: var(--section-margin-top);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .category__grid {
-  margin-top: var(--half-padding);
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
-  gap: 50px;
+  height: auto;
 }
 
 .category__grid-card {
@@ -128,4 +131,50 @@
   width: 44px;
   background-color: var(--light-yellow);
   border-radius: 5px 15px 5px 5px;
+}
+
+@media only screen and (min-width: 400px) {
+}
+
+@media only screen and (min-width: 500px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 1280px) {
+  .category__grid {
+    width: var(--content-width);
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .category__grid-card {
+    border-radius: 30px;
+    padding: 40px 15px;
+    gap: 20px;
+  }
+
+  .category__grid-card:hover::before {
+    bottom: -30px;
+    left: -35px;
+    width: 80px;
+    height: 80px;
+    border-radius: 28px 12px 12px 0;
+  }
+
+  .category__grid-card :nth-child(1) {
+    height: 140px;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1920px) {
 }

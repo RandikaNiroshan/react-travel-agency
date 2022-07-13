@@ -11,11 +11,14 @@ import {
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero__background">
+        <div />
         <img src={DecoBackground} alt="bg" />
       </div>
-      <Header />
+      <div>
+        <Header />
+      </div>
       <div className="hero__main">
         <div className="hero__left">
           <img src={DecoRedSpray} alt="Highlight" />
@@ -50,7 +53,7 @@ const Hero = () => {
           <img src={IconPlane} alt="Plane" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

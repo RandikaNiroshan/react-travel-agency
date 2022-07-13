@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <>
+    <div className="web-container">
       <Hero />
       <Categories />
       <TopSelling />
@@ -21,7 +21,7 @@ const App = () => {
       <Brands />
       <NewsLetter />
       <Footer />
-    </>
+    </div>
   );
 };
 

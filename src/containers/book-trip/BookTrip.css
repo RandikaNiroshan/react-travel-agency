@@ -1,9 +1,18 @@
 .book {
   width: 100%;
   height: auto;
-  padding: var(--half-padding) var(--site-padding);
   display: flex;
-  margin-top: 3.5rem;
+  margin-top: var(--section-margin-top);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book__left {
@@ -13,7 +22,6 @@
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
-  padding-right: 2rem;
 }
 
 .book__left-steps {
@@ -21,8 +29,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: var(--default-gap);
   padding-right: 5rem;
+  gap: 15px;
 }
 
 .icon {
@@ -191,4 +199,56 @@
   width: 45%;
   height: 100%;
   border-radius: 4px;
+}
+
+@media only screen and (min-width: 400px) {
+}
+
+@media only screen and (min-width: 500px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 1280px) {
+  .book > div {
+    width: var(--content-width);
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .book__left {
+    gap: 3rem;
+  }
+  
+  .book__left-steps {
+    gap: 15px;
+    padding-right: 5rem;
+  }
+
+  .book__right {
+    margin-left: 50px;
+    margin-top: 75px;
+  }
+  .book__right-card {
+    padding: 20px;
+    gap: 5px;
+  }
+
+  .book__right-status-card {
+    padding: 20px;
+    gap: 15px;
+    right: 30px;
+    bottom: 45px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1920px) {
 }

@@ -1,22 +1,27 @@
 .hero {
   width: 100%;
-  height: 100vh;
-  padding: var(--default-padding) var(--default-padding) var(--default-padding)
-    var(--site-padding);
+  height: var(--content-height);
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero > :nth-child(2) {
+  width: var(--content-width);
 }
 
 .hero__main {
-  width: 100%;
+  width: var(--content-width);
   height: 100%;
-  padding-right: var(--default-padding);
   display: flex;
   justify-content: space-between;
 }
 
 .hero__left {
-  width: 50%;
+  flex: 1;
   padding: var(--default-padding) 0;
   display: flex;
   flex-direction: column;
@@ -53,7 +58,7 @@
 
 .hero__left > :nth-child(4) {
   font-family: var(--font-poppins);
-  font-size: 16px;
+  font-size: var(--paragraph-text);
   font-weight: 500;
   color: var(--grey);
 }
@@ -78,7 +83,7 @@
 
 .hero__left-cta-play {
   display: flex;
-  gap: 1rem;
+  gap: var(--default-gap);
   justify-content: center;
   align-items: center;
 }
@@ -111,24 +116,27 @@
 .hero__background {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: flex-end;
   position: absolute;
-  top: -55px;
+  top: 0;
   right: 0;
-  width: 100%;
   z-index: -1;
 }
 
+.hero__background > div {
+  flex: 1;
+}
+
 .hero__background > img {
-  object-fit: contain;
-  width: 50%;
+  flex: 1;
+  object-fit: fill;
 }
 
 .hero__right {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  flex: 1;
   height: 100%;
 }
 
@@ -137,9 +145,8 @@
   top: -70px;
   right: -45px;
   object-fit: contain;
-  width: 130%;
-  height: 130%;
-
+  width: 100%;
+  height: 100%;
 }
 
 .hero__right > :nth-child(2) {
@@ -156,4 +163,85 @@
   right: -70px;
   width: 30%;
   height: 30%;
+}
+
+@media only screen and (min-width: 400px) {
+}
+
+@media only screen and (min-width: 500px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    padding: 70px 60px 40px 60px;
+    margin-bottom: 30px;
+  }
+
+  .hero__left > :nth-child(1) {
+    top: 244px;
+    right: -75px;
+    width: 70%;
+  }
+
+  .hero__left > :nth-child(2) {
+    padding-top: 2rem;
+  }
+
+  .hero__left-cta {
+    margin-top: var(--default-padding);
+  }
+
+  .hero__left-cta-btn {
+    padding: 14px 22px;
+  }
+
+  .hero__left-cta-play > div {
+    width: 45px;
+    height: 45px;
+  }
+
+  .hero__left-cta-play > div > :first-child {
+    padding-left: 3px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero__background {
+    bottom: 60px;
+  }
+
+  .hero__background > img {
+    object-fit: contain;
+  }
+
+  .hero__right > :nth-child(1) {
+    top: 20px;
+    right: 60px;
+  }
+
+  .hero__right > :nth-child(2) {
+    top: 20px;
+    left: -10px;
+    width: 30%;
+    height: 30%;
+  }
+
+  .hero__right > :nth-child(3) {
+    top: 90px;
+    right: -70px;
+    width: 30%;
+    height: 30%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1920px) {
 }

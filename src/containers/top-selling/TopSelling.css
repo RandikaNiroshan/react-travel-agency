@@ -1,9 +1,13 @@
 .selling {
   width: 100%;
   height: auto;
-  padding: var(--half-padding) var(--site-padding);
   overflow: hidden;
   position: relative;
+  margin-top: var(--section-margin-top);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .selling__grid {
@@ -20,4 +24,45 @@
     bottom: 100px;
     right: 85px;
     z-index: -1;
+}
+
+@media only screen and (min-width: 400px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 960px) {
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .selling__grid {
+    width: var(--content-width);
+    gap: 50px;
+    padding: 0 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .selling__deco{
+      width: auto;
+      height: auto;
+      bottom: 100px;
+      right: 85px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  
+}
+
+@media only screen and (min-width: 1920px) {
+  
 }
