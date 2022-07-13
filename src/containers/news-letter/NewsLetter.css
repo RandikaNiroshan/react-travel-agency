@@ -1,14 +1,24 @@
 .news-letter {
   width: 100%;
   height: auto;
+  display: flex;
+  margin-top: var(--section-margin-top);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 7rem var(--site-padding);
+}
+
+.news-letter > div {
+  width: var(--content-width);
+  height: auto;
   position: relative;
 }
 
 .news-letter__area {
   background-color: #dfd7f9;
   width: 100%;
-  height: auto;
   padding: var(--default-padding);
   padding-bottom: 0;
   border-radius: 60px 12px 12px 12px;
@@ -122,10 +132,9 @@
     rgba(94, 59, 225, 1) 0%,
     rgba(116, 125, 239, 1) 100%
   );
-  position: relative;
   position: absolute;
-  top: 6rem;
-  right: 8rem;
+  top: -25px;
+  right: -25px;
   z-index: 4;
 }
 
@@ -135,4 +144,49 @@
   transform: translate(-3px, 2px) rotate(12deg);
   color: white;
   padding: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+}
+
+@media only screen and (min-width: 500px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .news-letter {
+    padding: 50px 0;
+  }
+  .news-letter__area {
+    padding: 80px 100px 0 100px;
+    border-radius: 60px 12px 12px 12px;
+  }
+
+  .news-letter__area > h2 {
+    font-size: 33px;
+  }
+
+  .news-letter__area > :nth-child(2) {
+    padding: 70px 120px;
+    gap: 25px;
+  }
+
+  .news-letter__area-send {
+    width: 70px;
+    height: 70px;
+    top: -25px;
+    right: -25px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1920px) {
 }

@@ -7,31 +7,33 @@ import { DecoNewsLetterRight, DecoNewsLetterLeft } from "../../assets";
 const NewsLetter = () => {
   return (
     <section className="news-letter">
-      <div className="news-letter__area">
-        <h2>
-          Subscribe to get information, latest news and other interesting offers
-          about Cobham
-        </h2>
-        <div>
-          <div className="news-letter__area-input">
-            <div>
-              <MdOutlineEmail />
+      <div>
+        <div className="news-letter__area">
+          <h2>
+            Subscribe to get information, latest news and other interesting
+            offers about Cobham
+          </h2>
+          <div>
+            <div className="news-letter__area-input">
+              <div>
+                <MdOutlineEmail />
+              </div>
+              <input type="email" placeholder="Your email" />
             </div>
-            <input type="text" placeholder="Your email" />
+            <div className="news-letter__area-btn">
+              <p>Subscribe</p>
+            </div>
           </div>
-          <div className="news-letter__area-btn">
-            <p>Subscribe</p>
+          <div className="news-letter__area-decoration1">
+            <img src={DecoNewsLetterRight} alt="Decoration" />
+          </div>
+          <div className="news-letter__area-decoration2">
+            <img src={DecoNewsLetterLeft} alt="Decoration" />
           </div>
         </div>
-        <div className="news-letter__area-decoration1">
-          <img src={DecoNewsLetterRight} alt="Decoration" />
+        <div className="news-letter__area-send">
+          <IoPaperPlane />
         </div>
-        <div  className="news-letter__area-decoration2">
-          <img src={DecoNewsLetterLeft} alt="Decoration" />
-        </div>
-      </div>
-      <div className="news-letter__area-send">
-        <IoPaperPlane />
       </div>
     </section>
   );

@@ -10,6 +10,7 @@
 }
 
 .book > div {
+  width: var(--content-width);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +216,6 @@
 
 @media only screen and (min-width: 1280px) {
   .book > div {
-    width: var(--content-width);
     gap: 80px;
     margin-top: 50px;
     margin-bottom: 50px;
