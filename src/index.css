@@ -40,6 +40,20 @@
 }
 
 @media only screen and (min-width: 960px) {
+  :root {
+    --large-text: 64px;
+    --title-text: 40px;
+    --subtitle-text: 18px;
+    --text-size: 16px;
+    --paragraph-text: 15px;
+    --site-padding: 16px;
+    --default-padding: 8px;
+    --half-padding: 4;
+    --default-gap: 8px;
+    --content-width: 880px;
+    --content-height: 520px;
+    --section-margin-top:55px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -60,9 +74,37 @@
 }
 
 @media only screen and (min-width: 1600px) {
+  :root {
+    --large-text: 100px;
+    --title-text: 60px;
+    --subtitle-text: 24px;
+    --text-size: 20px;
+    --paragraph-text: 18px;
+    --site-padding: 30px;
+    --default-padding: 15px;
+    --half-padding: 8px;
+    --default-gap: 16px;
+    --content-width: 1360px;
+    --content-height: 860px;
+    --section-margin-top:100px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
+  :root {
+    --large-text: 120px;
+    --title-text: 65px;
+    --subtitle-text: 26px;
+    --text-size: 22px;
+    --paragraph-text: 20px;
+    --site-padding: 40px;
+    --default-padding: 20px;
+    --half-padding: 10px;
+    --default-gap: 20px;
+    --content-width: 1600px;
+    --content-height: 960px;
+    --section-margin-top:120px;
+  }
 }
 
 .body {

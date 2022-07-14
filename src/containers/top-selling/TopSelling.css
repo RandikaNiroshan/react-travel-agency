@@ -11,6 +11,7 @@
 }
 
 .selling__grid {
+  width: var(--content-width);
   margin-top: var(--default-padding);
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
@@ -39,12 +40,23 @@
 }
 
 @media only screen and (min-width: 960px) {
-
+  .selling__grid {
+    gap: 40px;
+    padding: 0 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .selling__deco{
+      width: auto;
+      height: auto;
+      bottom: 100px;
+      right: 85px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   .selling__grid {
-    width: var(--content-width);
     gap: 50px;
     padding: 0 40px;
     margin-top: 50px;
@@ -60,9 +72,33 @@
 }
 
 @media only screen and (min-width: 1600px) {
+  .selling__grid {
+    gap: 80px;
+    padding: 0 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   
+  .selling__deco{
+      width: auto;
+      height: auto;
+      bottom: 100px;
+      right: 85px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
+  .selling__grid {
+    gap: 120px;
+    padding: 0 50px;
+    margin-top: 75px;
+    margin-bottom: 60px;
+  }
   
+  .selling__deco{
+      width: auto;
+      height: auto;
+      bottom: 100px;
+      right: 85px;
+  }
 }

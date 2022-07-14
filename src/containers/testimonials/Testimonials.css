@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.testimonials > div{
+.testimonials > div {
   width: var(--content-width);
   display: flex;
   justify-content: flex-start;
@@ -157,24 +157,46 @@
 }
 
 @media only screen and (min-width: 400px) {
-
 }
 
 @media only screen and (min-width: 500px) {
-
 }
 
 @media only screen and (min-width: 768px) {
-
 }
 
 @media only screen and (min-width: 960px) {
+  .testimonials > div {
+    margin-bottom: 50px;
+  }
 
+  .testimonials__right {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .testimonials__left > :nth-child(2) {
+    margin-top: 5rem;
+    gap: 15px;
+  }
+
+  .testimonials__right > :last-child {
+    gap: 25px;
+    right: -20px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-  .testimonials > div{
+  .testimonials > div {
     margin-bottom: 60px;
+  }
+
+  .testimonials__right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
   .testimonials__left > :nth-child(2) {
@@ -186,13 +208,10 @@
     gap: 25px;
     right: -30px;
   }
-
 }
 
 @media only screen and (min-width: 1600px) {
-  
 }
 
 @media only screen and (min-width: 1920px) {
-  
 }

@@ -44,7 +44,7 @@
 
 .footer__menu th {
   font-family: var(--font-poppins);
-  font-size: 21px;
+  font-size: var(--subtitle-text);
   font-weight: bold;
   color: var(--black);
   text-align: left;
@@ -53,7 +53,7 @@
 
 .footer__menu td {
   font-family: var(--font-poppins);
-  font-size: 18px;
+  font-size: var(--text-size);
   font-weight: 500;
   color: var(--grey);
   padding: 4px 0;
@@ -90,7 +90,7 @@
 
 .footer__social > p {
   font-family: var(--font-poppins);
-  font-size: 20px;
+  font-size: var(--subtitle-text);
   font-weight: 500;
   color: var(--grey);
   margin-top: 32px;
@@ -138,6 +138,24 @@
 }
 
 @media only screen and (min-width: 960px) {
+
+  .footer__logo h1 {
+    font-size: 40px;
+  }
+  
+  .footer__logo p {
+    font-size: 12px;
+    margin-right: 30px;
+  }
+
+  .footer__social > div {
+    gap: 20px;
+  }
+  
+
+  .footer__credit {
+    margin: 25px 0 40px 0;
+  }
 }
 
 @media only screen and (min-width: 1280px) {

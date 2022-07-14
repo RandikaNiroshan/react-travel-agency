@@ -212,6 +212,25 @@
 }
 
 @media only screen and (min-width: 960px) {
+  .book > div {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  .book__right {
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+  .book__right-card {
+    padding: 18px;
+    gap: 5px;
+  }
+  .book__right-status-card {
+    padding: 20px;
+    gap: 15px;
+    right: -6px;
+    bottom: 45px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -224,7 +243,7 @@
   .book__left {
     gap: 3rem;
   }
-  
+
   .book__left-steps {
     gap: 15px;
     padding-right: 5rem;
@@ -248,7 +267,19 @@
 }
 
 @media only screen and (min-width: 1600px) {
+  .book__right-status-card {
+    padding: 20px;
+    gap: 20px;
+    right: 85px;
+    bottom: 45px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
+  .book__right-status-card {
+    padding: 25px;
+    gap: 25px;
+    right: 144px;
+    bottom: 45px;
+  }
 }
