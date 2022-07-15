@@ -5,7 +5,7 @@ import { IconSatellite, IconPlane, IconMic, IconGear } from "../../assets";
 
 const Categories = () => {
   return (
-    <section className="category">
+    <section className="category" id="category-section">
       <Title title="We offer best services" subtitle="Category" />
       <div className="category__grid">
         <div className="category__grid-card">

@@ -5,6 +5,13 @@
   border-radius: 30px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.08);
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.selling-card:hover{
+  box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-30px);
 }
 
 .selling-card img {
@@ -63,4 +70,39 @@
   font-size: 16px;
   font-weight: 500;
   color: var(--grey);
+}
+
+
+@media only screen and (min-width: 400px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 960px) {
+  .selling-card:hover{
+    transform: translateY(-10px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .selling-card:hover{
+    transform: translateY(-15px);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1920px) {
+  .selling-card:hover{
+    transform: translateY(-20px);
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Logo } from "../../assets";
+import { Link } from "react-scroll";
 const Header = () => {
   return (
     <header className="header">
@@ -9,10 +10,50 @@ const Header = () => {
       </div>
       <div className="header__right">
         <ul>
-          <li className="nav-menu">Services</li>
-          <li className="nav-menu">Destinations</li>
-          <li className="nav-menu">Book</li>
-          <li className="nav-menu">Testimonials</li>
+          <li className="nav-menu">
+            <Link
+              to="category-section"
+              smooth={true}
+              offset={-60}
+              duration={500}
+              delay={150}
+            >
+              Services
+            </Link>
+          </li>
+          <li className="nav-menu">
+            <Link
+              to="selling-section"
+              smooth={true}
+              offset={-60}
+              duration={500}
+              delay={150}
+            >
+              Destinations
+            </Link>
+          </li>
+          <li className="nav-menu">
+            <Link
+              to="book-section"
+              smooth={true}
+              offset={-60}
+              duration={500}
+              delay={150}
+            >
+              Book
+            </Link>
+          </li>
+          <li className="nav-menu">
+            <Link
+              to="testimonials-section"
+              smooth={true}
+              offset={-60}
+              duration={500}
+              delay={150}
+            >
+              Testimonials
+            </Link>
+          </li>
           <li className="nav-menu">Login</li>
           <li className="header__right-btn">Sign up</li>
           <select className="header_right-select">

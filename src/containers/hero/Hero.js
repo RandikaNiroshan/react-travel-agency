@@ -11,7 +11,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero-section">
       <div className="hero__background">
         <div />
         <img src={DecoBackground} alt="bg" />

@@ -38,6 +38,7 @@
   border-radius: 50%;
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .testimonials__left > :nth-child(2) > :first-child {
@@ -148,6 +149,7 @@
   color: var(--black);
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .inactive-icon {
@@ -211,7 +213,17 @@
 }
 
 @media only screen and (min-width: 1600px) {
+  .testimonials-card {
+    width: 90%;
+    height: 220px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
+
+  .testimonials-card {
+    width: 85%;
+    height: 220px;
+  }
+  
 }

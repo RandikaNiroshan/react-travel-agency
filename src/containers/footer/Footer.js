@@ -2,13 +2,24 @@ import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { GooglePlayBtn, AppStoreBtn } from "../../assets";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div>
         <div className="footer__logo">
-          <h1>Jadoo.</h1>
+          <h1>
+            <Link
+              to="hero-section"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={150}
+            >
+              Jadoo.
+            </Link>
+          </h1>
           <p>Book your trip in minute, get full Control for much longer.</p>
         </div>
         <div className="footer__menu">
@@ -54,10 +65,14 @@ const Footer = () => {
           <p>Discover our app</p>
           <div>
             <div>
-              <img src={GooglePlayBtn} alt="Google play" />
+              <img
+                className="store-btn"
+                src={GooglePlayBtn}
+                alt="Google play"
+              />
             </div>
             <div>
-              <img src={AppStoreBtn} alt="App store" />
+              <img className="store-btn" src={AppStoreBtn} alt="App store" />
             </div>
           </div>
         </div>

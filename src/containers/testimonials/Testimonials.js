@@ -6,7 +6,7 @@ import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="testimonials-section">
       <div>
         <div className="testimonials__left">
           <Title

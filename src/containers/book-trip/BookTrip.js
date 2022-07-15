@@ -11,7 +11,7 @@ import { ImgGreece, ImgRome2 } from "../../assets";
 
 const BookTrip = () => {
   return (
-    <section className="book">
+    <section className="book" id="book-section">
       <div>
         <div className="book__left">
           <Title

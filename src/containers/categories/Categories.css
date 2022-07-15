@@ -26,6 +26,8 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .category__grid-card:hover {

@@ -2,7 +2,6 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  position: relative;
   margin-top: var(--section-margin-top);
   display: flex;
   justify-content: center;
@@ -10,8 +9,13 @@
   align-items: center;
 }
 
-.selling__grid {
+.selling > :nth-child(2) {
   width: var(--content-width);
+  position: relative;
+}
+
+.selling__grid {
+  width: 100%;
   margin-top: var(--default-padding);
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
@@ -48,11 +52,10 @@
   }
   
   .selling__deco{
-      width: auto;
-      height: auto;
-      bottom: 100px;
-      right: 85px;
-  }
+    transform: scale(0.7);
+    bottom: 60px;
+    right: -22px;
+}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -64,11 +67,10 @@
   }
   
   .selling__deco{
-      width: auto;
-      height: auto;
-      bottom: 100px;
-      right: 85px;
-  }
+    transform: scale(0.9);
+    bottom: 100px;
+    right: -25px;
+}
 }
 
 @media only screen and (min-width: 1600px) {
@@ -80,11 +82,10 @@
   }
   
   .selling__deco{
-      width: auto;
-      height: auto;
-      bottom: 100px;
-      right: 85px;
-  }
+    transform: scale(1);
+    bottom: 130px;
+    right: -20px;
+}
 }
 
 @media only screen and (min-width: 1920px) {
@@ -96,9 +97,8 @@
   }
   
   .selling__deco{
-      width: auto;
-      height: auto;
-      bottom: 100px;
-      right: 85px;
+      transform: scale(1);
+      bottom: 130px;
+      right: -10px;
   }
 }
