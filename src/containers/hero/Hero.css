@@ -4,7 +4,6 @@
   padding: 70px 60px 40px 60px;
   margin-bottom: 30px;
   position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -125,6 +124,8 @@
 
 .hero__background {
   display: flex;
+  width: 100%;
+  height: calc(var(--content-height) * 0.9);
   justify-content: flex-end;
   align-items: flex-end;
   position: absolute;
@@ -135,13 +136,12 @@
 }
 
 .hero__background > div {
-  flex: 1;
+  width: 48%;
 }
 
 .hero__background > img {
-  flex: 1;
+  width: 52%;
   object-fit: contain;
-
 }
 
 .hero__right {
@@ -190,9 +190,35 @@
   .hero > :nth-child(2) {
     padding-top: 0;
   }
+
+  .hero__left-cta {
+    gap: calc(var(--default-gap) * 2.5);
+  }
+
   .hero__left > :nth-child(2) {
     padding-top: 30px;
     padding-bottom: 5px;
+  }
+
+  .hero__left > :nth-child(1) {
+    top: 120px;
+    right: -50px;
+  }
+
+  .hero__right > :nth-child(1) {
+    top: 30px;
+    right: 50px;
+    transform: scale(1.1);
+  }
+  
+  .hero__right > :nth-child(2) {
+    top: 25px;
+    left: -15px;
+  }
+  
+  .hero__right > :nth-child(3) {
+    top: 55px;
+    right: -10px;
   }
 }
 
@@ -214,6 +240,7 @@
 
   .hero__left-cta {
     margin-top: var(--default-padding);
+    gap: calc(var(--default-gap) * 1.5);
   }
 
   .hero__left-cta-btn {
@@ -253,10 +280,69 @@
     width: 30%;
     height: 30%;
   }
+
+  .hero__left > :nth-child(1) {
+    top: 155px;
+    right: -75px;
+  }
+
+  .hero__right > :nth-child(1) {
+    top: 40px;
+    right: 70px;
+    transform: scale(1.1);
+  }
+  
+  .hero__right > :nth-child(2) {
+    top: 25px;
+    left: -15px;
+  }
+  
+  .hero__right > :nth-child(3) {
+    top: 90px;
+    right: -10px;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
+  .hero__left > :nth-child(1) {
+    top: 220px;
+    right: -90px;
+  }
+  
+  .hero__right > :nth-child(2) {
+    top: 35px;
+    left: -15px;
+  }
+  
+  .hero__right > :nth-child(3) {
+    top: 90px;
+    right: -40px;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
+  .hero__left-cta {
+    gap: calc(var(--default-gap) * 1.2);
+  }
+
+  .hero__left > :nth-child(1) {
+    top: 246px;
+    right: -115px;
+  }
+
+  .hero__right > :nth-child(1) {
+    top: 45px;
+    right: 60px;
+    transform: scale(1.08);
+  }
+
+  .hero__right > :nth-child(2) {
+    top: 30px;
+    left: -15px;
+  }
+  
+  .hero__right > :nth-child(3) {
+    top: 90px;
+    right: -55px;
+  }
 }
